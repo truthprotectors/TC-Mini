@@ -56,3 +56,9 @@ The app is static files — no build step. Serve `app/`, `vendor/`, `probe.js`, 
 App code: Apache-2.0. Model weights: Apache-2.0, inherited from [Qwen3](https://huggingface.co/Qwen) via [mlabonne/Qwen3-4B-abliterated](https://huggingface.co/mlabonne/Qwen3-4B-abliterated) (and the 1.7B / 0.6B siblings). Runtime: [WebLLM / MLC-LLM](https://github.com/mlc-ai/web-llm) (Apache-2.0).
 
 Abliterated models answer requests that stock models refuse. You are responsible for how you use it.
+
+## More from truthprotectors
+
+- **[TC Mini](https://github.com/truthprotectors/TC-Mini)** — private AI that runs entirely on your phone or PC (WebGPU in the browser, or Ollama / LM Studio). [Open it now](https://truthprotectors.github.io/TC-Mini/app/) · [weights](https://huggingface.co/truthcoder/TC-Mini)
+- **[Abliterated LLM Benchmarks](https://github.com/truthprotectors/abliterated-llm-benchmarks)** — 74 open-weight models and quants on SWE-bench Verified, refusals and speed · [dataset](https://huggingface.co/datasets/truthcoder/abliterated-llm-benchmarks)
+- **[Claude-clone UI/UX](https://github.com/truthprotectors/Claude-clone-UI-UX)** — open-source Claude-style chat UI for AI coding agents
