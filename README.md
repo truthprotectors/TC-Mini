@@ -24,15 +24,19 @@
 
 ## Use it on a PC (Ollama / LM Studio / llama.cpp)
 
-GGUF files (Q4_K_M and Q8_0 for every size) are on the [Hugging Face page](https://huggingface.co/truthcoder/TC-Mini/tree/main/gguf).
+| Size | GGUF repo | Q4_K_M | Best for |
+|---|---|---|---|
+| 4B | [truthcoder/TC-Mini-4B-GGUF](https://huggingface.co/truthcoder/TC-Mini-4B-GGUF) | 2.5 GB | desktops / laptops with a GPU or Apple Silicon |
+| 1.7B | [truthcoder/TC-Mini-1.7B-GGUF](https://huggingface.co/truthcoder/TC-Mini-1.7B-GGUF) | 1.1 GB | small laptops, mini-PCs |
+| 0.6B | [truthcoder/TC-Mini-0.6B-GGUF](https://huggingface.co/truthcoder/TC-Mini-0.6B-GGUF) | 0.4 GB | any computer |
 
 ```bash
 # Ollama
-ollama run hf.co/truthcoder/TC-Mini:Q4_K_M          # picks the 4B
+ollama run hf.co/truthcoder/TC-Mini-4B-GGUF:Q4_K_M
 # llama.cpp
-llama-cli -hf truthcoder/TC-Mini:Q4_K_M
+llama-cli -hf truthcoder/TC-Mini-4B-GGUF:Q4_K_M
 ```
-LM Studio: search **truthcoder/TC-Mini**.
+LM Studio: search **TC-Mini**. Q8_0 (near-lossless) and F16 files are in each repo too. Add `/no_think` to a message to skip the thinking step.
 
 ## Verify a release yourself (any machine with OpenSSH ≥ 8.2)
 
